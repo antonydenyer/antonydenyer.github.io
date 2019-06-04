@@ -3,7 +3,7 @@ layout: post
 title: "ElasticSearch schema migrations with zero downtime"
 date: 2016-12-04 21:49:07 +0000
 comments: true
-redirect_from: '/blog/2016/12/04/elasticsearch-schema-migrations-with-zero-downtime'
+redirect_from: '/blog/2016/12/04/elasticsearch-schema-migrations-with-zero-downtime/'
 categories: ["elasticsearch", "schema mirgation", "re-indexing", "re-ingestion"]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "The Novel Developer"
 date: 2017-02-13 21:49:07 +0000
 comments: true
-redirect_from: '/blog/2017/02/13/the-novel-developer'
+redirect_from: '/blog/2017/02/13/the-novel-developer/'
 categories: ["developers"]
 ---
 

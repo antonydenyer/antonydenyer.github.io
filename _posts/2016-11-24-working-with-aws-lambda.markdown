@@ -3,7 +3,7 @@ layout: post
 title: "Working with AWS Lambda"
 date: 2016-11-24 15:23:59 +0000
 comments: true
-redirect_from: '/blog/2016/11/24/working-with-aws-lambda'
+redirect_from: '/blog/2016/11/24/working-with-aws-lambda/'
 categories: ["AWS", "AWS Lambda", "FaaS", "Serverless"]
 ---
 
