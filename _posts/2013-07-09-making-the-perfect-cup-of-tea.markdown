@@ -3,6 +3,7 @@ layout: post
 title: "making the perfect cup of tea"
 date: 2013-07-09 09:23
 comments: true
+redirect_from: '/blog/2013/07/09/making-the-perfect-cup-of-tea/'
 categories: tea
 ---
 

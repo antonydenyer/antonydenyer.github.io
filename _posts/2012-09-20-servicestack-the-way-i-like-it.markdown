@@ -3,6 +3,7 @@ layout: post
 title: "ServiceStack the way I like it"
 date: 2012-09-20 19:52
 comments: true
+redirect_from: '/blog/2012/09/20/servicestack-the-way-i-like-it/'
 categories: ServiceStack
 ---
 

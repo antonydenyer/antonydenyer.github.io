@@ -3,6 +3,7 @@ layout: post
 title: "The Value of Functions"
 date: 2017-02-18 21:49:07 +0000
 comments: true
+redirect_from: '/blog/2017/02/18/the-value-of-functions'
 categories: ["aws","FaaS", "lambda", "Azure functions", "serverless"]
 ---
 With the emergence of FaaS entering the mainstream, we are starting to see some real world business value in using such an architecture. Many of the benefits of using FaaS are discussed elsewhere:  

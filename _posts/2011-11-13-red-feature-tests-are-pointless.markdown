@@ -3,6 +3,7 @@ layout: post
 title: "Red feature tests are pointless"
 date: 2011-11-13 17:52
 comments: true
+redirect_from: '/blog/2011/11/13/red-feature-tests-are-pointless/'
 categories: [Feature Tests,Agile]
 ---
 

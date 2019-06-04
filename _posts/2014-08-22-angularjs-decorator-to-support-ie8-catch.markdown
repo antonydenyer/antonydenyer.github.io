@@ -3,6 +3,7 @@ layout: post
 title: "angularjs decorator to support ie8 catch"
 date: 2014-08-22 16:09:29 +0100
 comments: true
+redirect_from: '/blog/2014/08/22/angularjs-decorator-to-support-ie8-catch/'
 categories: angularjs
 ---
 When using the angularjs $q library with ES3 browsers (IE8 etc) you get an 'Expected identifier' error when you try and use the catch method on angularjs $q library. This is because catch is a reserved word in ES3 and reserved words are not supported as property names in ES3. To get round the problem you can access the function using square bracket notation. Personally I find this kind of syntax rather ugly. 

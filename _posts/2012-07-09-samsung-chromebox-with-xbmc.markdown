@@ -3,6 +3,7 @@ layout: post
 title: "Samsung Chromebox with XBMC"
 date: 2012-07-09 18:07
 comments: true
+redirect_from: '/blog/2012/07/09/samsung-chromebox-with-xbmc/'
 categories: [Chrombox,Google I/O]
 ---
 

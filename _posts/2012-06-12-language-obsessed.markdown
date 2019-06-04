@@ -3,6 +3,7 @@ layout: post
 title: "Language Obsessed"
 date: 2012-06-20 18:05
 comments: true
+redirect_from: '/blog/2012/06/12/language-obsessed/'
 categories: 
 ---
 Recently on the [GOOS group discussion board][1] there was a good debate about Acceptance Testing. Whilst much of the advice was good it amazed me how many people hadn't looked outside of their own language community for inspiration.

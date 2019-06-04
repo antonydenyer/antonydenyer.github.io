@@ -3,6 +3,7 @@ layout: post
 title: "Testing Async Behaviour - AutoResetEvent WaitOne"
 date: 2012-07-10 20:23
 comments: true
+redirect_from: '/blog/2012/07/10/testing-async-behaviour-autoresetevent-waitone/'
 categories: [async,TDD]
 ---
 

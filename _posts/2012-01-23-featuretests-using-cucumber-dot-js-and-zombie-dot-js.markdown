@@ -3,6 +3,7 @@ layout: post
 title: "Feature Tests using Cucumber.js and zombie.js"
 date: 2012-01-23 18:01
 comments: true
+redirect_from: '/blog/2012/01/23/featuretests-using-cucumber-dot-js-and-zombie-dot-js/'
 categories: [Feature Tests,BDD,Node.js]
 ---
 

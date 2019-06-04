@@ -3,6 +3,7 @@ layout: post
 title: "Do you need a computer science degree to be a developer?"
 date: 2014-06-16 10:49
 comments: true
+redirect_from: '/blog/2014/06/16/do-you-need-a-computer-science-degree-to-be-a-developer/'
 categories: [makers,teaching,coaching]
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "nuget Update-Package with a filter"
 date: 2013-09-10 11:29
 comments: true
+redirect_from: '/blog/2013/07/25/OctoChef-abusing-octopus-deploy-for-Windows-Server-Configuration-Management/'
 categories: [powershell, nuget]
 ---
 

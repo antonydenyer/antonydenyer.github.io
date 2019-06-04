@@ -3,6 +3,7 @@ layout: post
 title: "MVC and our interpretation at 7digital"
 date: 2011-06-21 17:49
 comments: true
+redirect_from: '/blog/2011/06/21/mvc-and-our-interpretation-at-7digital/'
 categories: mvc
 ---
 

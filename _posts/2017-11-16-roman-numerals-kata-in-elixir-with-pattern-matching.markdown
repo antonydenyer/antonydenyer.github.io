@@ -3,6 +3,7 @@ layout: post
 title: "Roman Numerals Kata in Elixir with Pattern Matching"
 date: 2017-11-16 14:24:09 +0000
 comments: true
+redirect_from: '/blog/2017/11/16/roman-numerals-kata-in-elixir-with-pattern-matching/'
 categories: ["elixir", "tdd"]
 ---
 

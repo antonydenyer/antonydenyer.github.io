@@ -3,6 +3,7 @@ layout: post
 title: "Private Blockchain Use Case For Reference Rate Data"
 date: 2019-02-19 14:24:09 +0000
 comments: true
+redirect_from: '/blog/2019/02/19/private-blockchain-use-case-for-reference-rate-data/'
 categories: ["blockchain", "quorum", "smart contracts", "LIBOR", "ethereum"]
 ---
 

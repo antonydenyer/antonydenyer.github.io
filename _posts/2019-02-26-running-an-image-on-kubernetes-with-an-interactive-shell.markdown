@@ -3,6 +3,7 @@ layout: post
 title: "running an image on kubernetes with an interactive shell"
 date: 2019-02-26 15:12:09 +0000
 comments: true
+redirect_from: "/blog/2019/02/26/running-an-image-on-kubernetes-with-an-interactive-shell/"
 categories: ["kubernetes", "k8s", "geth", "ethereum"]
 ---
 

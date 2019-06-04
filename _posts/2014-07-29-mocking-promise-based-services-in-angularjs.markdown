@@ -3,6 +3,7 @@ layout: post
 title: "Mocking promise based services in AngularJS with Jasmine"
 date: 2014-07-29 08:37
 comments: true
+redirect_from: '/blog/2014/07/29/mocking-promise-based-services-in-angularjs/'
 categories: [AngularJS, Jasmine]
 ---
 

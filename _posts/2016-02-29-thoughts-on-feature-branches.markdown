@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts on feature branches"
 date: 2016-02-29 10:59:33 +0000
 comments: true
+redirect_from: '/blog/2016/02/29/thoughts-on-feature-branches/'
 categories: ["Continuous Delivery","Feature Branches", "Continuous Integration"]
 ---
 

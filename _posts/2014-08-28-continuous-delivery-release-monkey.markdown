@@ -3,6 +3,7 @@ layout: post
 title: "Continuous Delivery - Chaos Build/Release Monkey"
 date: 2014-08-28 09:16:25 +0100
 comments: true
+redirect_from: '/blog/2014/08/28/continuous-delivery-release-monkey/'
 categories: "Continuous Delivery"
 ---
 

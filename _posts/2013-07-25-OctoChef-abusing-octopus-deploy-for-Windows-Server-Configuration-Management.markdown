@@ -3,6 +3,7 @@ layout: post
 title: "OctoChef - Abusing Octopus Deploy for Windows Server configuration Management"
 date: 2013-07-25 09:38
 comments: true
+redirect_from: '/blog/2013/07/25/OctoChef-abusing-octopus-deploy-for-Windows-Server-Configuration-Management/'
 categories: [Octopus Deploy,DevOps]
 ---
 

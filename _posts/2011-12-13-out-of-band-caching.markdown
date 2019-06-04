@@ -3,6 +3,7 @@ layout: post
 title: "Out of band caching"
 date: 2011-12-13 17:57
 comments: true
+redirect_from: '/blog/2011/12/13/out-of-band-caching/'
 categories: caching
 ---
 One of the things we try and do is always keep our site up, sounds simple right? One way to&nbsp;achieve&nbsp;this is to have a good caching policy.

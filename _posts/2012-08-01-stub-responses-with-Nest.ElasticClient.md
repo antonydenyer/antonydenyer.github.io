@@ -3,6 +3,7 @@ layout: post
 title: "Stub responses with Nest.ElasticClient"
 date: 2012-08-01 12:08
 comments: true
+redirect_from: '/blog/2012/08/01/stub-responses-with-Nest.ElasticClient/'
 categories: [Elastic Search]
 ---
 

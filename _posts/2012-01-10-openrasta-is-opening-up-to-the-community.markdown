@@ -3,6 +3,7 @@ layout: post
 title: "OpenRasta is opening up to the community"
 date: 2012-01-10 17:59
 comments: true
+redirect_from: '/blog/2012/01/10/openrasta-is-opening-up-to-the-community/'
 categories: 
 ---
 

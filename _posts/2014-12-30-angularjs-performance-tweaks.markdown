@@ -3,6 +3,7 @@ layout: post
 title: "angularjs performance tweaks"
 date: 2014-12-30 10:48:57 +0000
 comments: true
+redirect_from: '/blog/2014/12/30/angularjs-performance-tweaks/'
 categories: angularjs
 ---
 # Performance tips for angularjs #

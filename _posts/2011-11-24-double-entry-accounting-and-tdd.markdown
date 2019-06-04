@@ -3,6 +3,7 @@ layout: post
 title: "Double Entry Accounting and TDD"
 date: 2011-11-24 17:54
 comments: true
+redirect_from: '/blog/2011/11/24/double-entry-accounting-and-tdd/'
 categories: TDD
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "Deploying ServiceStack to debian using capistrano hosted using nginx and fastcgi"
 date: 2012-09-21 20:13
 comments: true
+redirect_from: '/blog/2012/09/20/servicestack-the-way-i-like-it/'
 categories: [debian,fastcgi,mono,ServiceStack]
 ---
 Over the last month we've started using ServiceStack for a couple of our api endpoints. We're hosting these projects on a debian squeeze vm using nginx and mono. We ran into various problems along the way. Here's a breakdown of what we found and how we solved the issues we ran into. Hopefully you'll find this useful.   

@@ -3,6 +3,7 @@ layout: post
 title: "HOWTO: Deploy mono web applications with capistrano-mono-deploy"
 date: 2012-12-13 20:34
 comments: true
+redirect_from: '/blog/2012/12/13/howto-deploy-mono-web-applications-with-capistrano-mono-deploy/'
 categories: [capistrano,mono]
 ---
 I've recently been working on a capistrano gem to help with mono deployments. I've had a bit of experience trying to get capistrano to work with non-rails environments, basically it can be a bit of pain if you're not sure what you're doing. Also most of the beginners tutorials are aimed at people developing Ruby on Rails. So I though I'd create a gem and provide a little how to. The gem is called [capistrano-mono-deploy][1]. This is how you can use it to deploy a simple web application to a Linux machine. In this example I'll be using the excellent [ServiceStack ][2]for the web application and xsp4 to host the it. You can find all the code on [my github account][3].

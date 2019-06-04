@@ -3,6 +3,7 @@ layout: post
 title: "Resolving an open generic type with Castle Windsor"
 date: 2011-01-14 17:31
 comments: true
+redirect_from: '/blog/2011/01/14/resolving-an-open-generic-type-with-castle-windsor/'
 categories: castle windsor
 ---
 
