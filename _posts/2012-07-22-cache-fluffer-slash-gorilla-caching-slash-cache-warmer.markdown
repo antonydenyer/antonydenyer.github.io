@@ -3,6 +3,7 @@ layout: post
 title: "Cache Fluffer / Gorilla Caching / Cache Warmer"
 date: 2012-07-22 20:27
 comments: true
+redirect_from: "/blog/2012/07/22/cache-fluffer-slash-gorilla-caching-slash-cache-warmer/"
 categories: [Cache]
 ---
 The relatively simple introduction of a cache fluffer can make a huge difference to performance, particularly at peak load. The idea is simple, keep the cache up to do date so you don't have to go and get data when the user requests the site.
