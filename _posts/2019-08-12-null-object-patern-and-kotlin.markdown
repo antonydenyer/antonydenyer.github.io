@@ -1,5 +1,3 @@
-# Introduction
-
 By default, Kotlin is [null safe](https://kotlinlang.org/docs/reference/null-safety.html). It means that you have explicitly state that you want a type to be nullable. For example, the compiler will stop you from doing stupid things like `var name: String = null` so you need to explicitly say you want your string to be nullable `var name: String? = null`. Then when you try and access it, the compiler will force you to act `Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?`. 
 
 
@@ -9,15 +7,15 @@ Let's take a look at a more concrete example. Say we have some existing Java cod
 
 ```
 class Entity {
- var name: String? = null
+  var name: String? = null
 }
 
 class Service {
- private val entity: Entity? = null
+  private val entity: Entity? = null
 
- fun getById(id: String): Entity? {
- return entity
- }
+  fun getById(id: String): Entity? {
+    return entity
+  }
 }
 
 ```
@@ -28,11 +26,11 @@ My personal preference would be to treat everything outside of Kotlin as an exte
 
 ```
 class SafeService {
- private val service = Service()
+  private val service = Service()
 
- fun getById(id: String): SafeEntity {
- return service.getById(id)?.let { SafeEntity(it.name ?: "") } ?: SafeEntity("")
- }
+  fun getById(id: String): SafeEntity {
+    return service.getById(id)?.let { SafeEntity(it.name ?: "") } ?: SafeEntity("")
+  }
 }
 
 data class SafeEntity(var name: String)
