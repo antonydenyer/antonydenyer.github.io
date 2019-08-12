@@ -1,4 +1,14 @@
-By default, Kotlin is [null safe](https://kotlinlang.org/docs/reference/null-safety.html). It means that you have explicitly state that you want a type to be nullable. For example, the compiler will stop you from doing stupid things like `var name: String = null` so you need to explicitly say you want your string to be nullable `var name: String? = null`. Then when you try and access it, the compiler will force you to act `Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?`. 
+---
+layout: post
+title: "Null Object Patern And Kotlin"
+date: 2019-08-12 15:12:09 +0000
+comments: true
+categories: ["kotlin", "null"]
+---
+
+By default, Kotlin is [null safe](https://kotlinlang.org/docs/reference/null-safety.html). It means that you have explicitly state that you want a type to be nullable. For example, the compiler will stop you from doing stupid things.
+ 
+For instance you can't do `var name: String = null` you need to explicitly say you want your string to be nullable `var name: String? = null`. Then when you try and access it, the compiler will force you to act `Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?`. 
 
 
 # Example
