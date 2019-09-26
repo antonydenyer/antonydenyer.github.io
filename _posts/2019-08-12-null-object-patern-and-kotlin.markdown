@@ -7,15 +7,14 @@ categories: ["kotlin", "null"]
 ---
 
 By default, Kotlin is [null safe](https://kotlinlang.org/docs/reference/null-safety.html). It means that you have explicitly state that you want a type to be nullable. For example, the compiler will stop you from doing stupid things.
- 
+
 For instance you can't do `var name: String = null` you need to explicitly say you want your string to be nullable `var name: String? = null`. Then when you try and access it, the compiler will force you to act `Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?`. 
 
-
-# Example
+## Example
 
 Let's take a look at a more concrete example. Say we have some existing Java code that we want to interact with and can not change:
 
-```
+```kotlin
 class Entity {
   var name: String? = null
 }
@@ -34,7 +33,7 @@ The problem is that when we come to interact with the Entity, we still need to d
 
 My personal preference would be to treat everything outside of Kotlin as an external integration point and wrap it. The problem is that you end up with some reasonably janky code. Not only do you need to make a shadow `Service` to be completely safe, you probably also need to shadow `Entity`.
 
-```
+```kotlin
 class SafeService {
   private val service = Service()
 
@@ -47,4 +46,4 @@ data class SafeEntity(var name: String)
 
 ```
 
-I don't know that it's any better. For me, the main benefit is having the default behaviour in a single place. 
+I don't know that it's any better. For me, the main benefit is having the default behaviour in a single place.
