@@ -6,7 +6,7 @@ comments: true
 categories: ["developers"]
 ---
 
-I've worked with many developers over the years. More recently the majority of them have been junior developers. When working with someone junior the best you can hope for is not net negative (NNPP)[http://www.pyxisinc.com/NNPP_Article.pdf]. By that, I mean that the developer doesn't have any impact on the project.
+I've worked with many developers over the years. More recently the majority of them have been junior developers. When working with someone junior the best you can hope for is not net negative [NNPP](http://www.pyxisinc.com/NNPP_Article.pdf). By that, I mean that the developer doesn't have any impact on the project.
 
 There will be a period where the vast majority of what they are doing is whatever you tell them to do. They will most likely not do it how you want it to be done. It will also probably take you longer to explain what needs doing than it would be to do it yourself. This is normal and should be expected for the first 3 months with a junior developer. This is going to have a negative impact on your project as you are spending time that could otherwise be used for other things. 
 
