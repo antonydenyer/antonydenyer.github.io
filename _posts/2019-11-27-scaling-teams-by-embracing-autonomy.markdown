@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scaling teams by embracing autonomy."
+title: "Scaling teams by embracing autonomy"
 date: 2019-11-27 08:00:00 +0000
 comments: true
 categories: ["developers"]
