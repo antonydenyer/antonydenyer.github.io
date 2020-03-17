@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why peer count matters"
+title: "Why peer count matters for distributed systems"
 date: 2020-02-26 08:00:00 +0000
 comments: true
 categories: ["ethereum", "blockchain", "consensus"]
@@ -30,6 +30,8 @@ It's a good idea to make sure that the peers that you've connected to are suffic
 
 References:
 
-https://github.com/ethereum/devp2p/blob/master/rlpx.md
-https://github.com/ethereum/devp2p/wiki/Discovery-Overview
-https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419
+https://github.com/ethereum/devp2p/blob/master/rlpx.md 
+
+https://github.com/ethereum/devp2p/wiki/Discovery-Overview 
+
+https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419 
