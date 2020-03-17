@@ -8,7 +8,18 @@ categories: ["developers", "spring", "spring-data"]
 
 Unfortunately it looks like spring-data will not autowire up queries that will perform an `in` query under the hood. 
 
-Out of the box, you can query for ids using a CrudRepository and `fun findAllById(ids: Iterable<ID>) : Iterable<Entity>`. Spring will automatically wire up `fun findAllByPropertyId(propertyId: String) : Iterable<Entity>` and do what you expect but what it won't do is wire up `fun findAllByPropertyId(propertyIds: Iterable<ID>) : Iterable<Entity>`. You must to annotate the interface method with the query you want it to perform.
+Out of the box, you can query for ids using a CrudRepository:
+
+`fun findAllById(ids: Iterable<ID>) : Iterable<Entity>`
+
+Spring will also automatically wire up simple queries like: 
+
+`fun findAllByPropertyId(propertyId: String) : Iterable<Entity>`
+
+
+What it won't do is wire up `fun findAllByPropertyId(propertyIds: Iterable<ID>) : Iterable<Entity>`. 
+
+You must to annotate the interface method with the query you want it to perform.
 
 ```
 @Query("{propertyId: { \$in: ?0 }}")
