@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To: perform an 'in' query with mongo and spring-data"
-date: 2020-03-04 08:00:00 +0000
+date: 2020-03-17 08:00:00 +0000
 comments: true
 categories: ["developers", "spring", "spring-data"]
 ---
