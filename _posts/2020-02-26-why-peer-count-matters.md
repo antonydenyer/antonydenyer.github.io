@@ -19,7 +19,7 @@ Ethereum is a decentralised application platform; it is a distributed unstructur
 
 Simply put, you need to have peers to be able to have a network. Otherwise, you're just talking to yourself! You could run a node with a single peer that's connected to the broader network. The downside is that you must trust, completely, that single peer. At the other extreme you could try and connect to all available peers, the problem is that it doesn't scale. You can not talk to everyone in a timely manner. What you need to have is a reasonable number of peers whereby the chances of more than half of them being malicious is low.
 
-# How do you prevent yourself being hijacked 
+# How do you prevent yourself from being hijacked 
 
 The way you discover peers needs to be random. The problem is you need to start somewhere, with ethereum mainnet this is achieved via bootnodes. They are maintained by the ethereum foundation and act as a lookup for other nodes. Once you have some peers you can ask for some more peers (neighbours). Your client can walk the network to find sufficiently random peers to connect to. 
 
