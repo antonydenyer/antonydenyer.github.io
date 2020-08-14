@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testing Google Cloud Storage with Testcontainers and MockK"
-date: 2011-11-13 17:52
+date: 2020-08-14 17:52
 comments: true
 categories: [Kotlin, Testcontainers, MockK, Hamkrest, GCS]
 ---
