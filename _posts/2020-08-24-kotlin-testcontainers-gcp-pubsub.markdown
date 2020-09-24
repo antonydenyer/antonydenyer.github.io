@@ -54,17 +54,17 @@ object PubSubTestContainer {
 
     private fun startEmulator(): KGenericContainer {
         return KGenericContainer("gcr.io/google.com/cloudsdktool/cloud-sdk")
-                .withExposedPorts(8085)
-                .withCreateContainerCmdModifier {
-                    it.withEntrypoint("gcloud", "beta", "emulators", "pubsub", "start", "--host-port=0.0.0.0:8085")
+            .withExposedPorts(8085)
+            .withCreateContainerCmdModifier {
+                it.withEntrypoint("gcloud", "beta", "emulators", "pubsub", "start", "--host-port=0.0.0.0:8085")
+            }
+            .waitingFor(Wait.forLogMessage(".*Server started.*", 1))
+            .apply {
+                start()
+                followOutput {
+                    logger.debug { it }
                 }
-                .waitingFor(Wait.forLogMessage(".*Server started.*", 1))
-                .apply {
-                    start()
-                    followOutput {
-                        logger.debug { it }
-                    }
-                }
+            }
 
     }
 
@@ -103,7 +103,10 @@ We can then start to write some test around the creation of topics.
 fun `can create and list topics`() {
     topicAdminClient.createTopic(TopicName.of("project-id", "a-topic"))
 
-    val topic = topicAdminClient.listTopics(ProjectName.of("project-id")).iterateAll().first()
+    val topic = topicAdminClient
+        .listTopics(ProjectName.of("project-id"))
+        .iterateAll()
+        .first()
 
     assertThat(topic.name, equalTo("projects/project-id/topics/a-topic"))
 }
@@ -200,4 +203,4 @@ Fairly straight forward.
 
 Using GCP PubSub is not that simple to get started with and is not that easy to test.
 
-All the code is available at (https://github.com/antonydenyer/test-google-cloud-pubsub)
+All the code is available over at [github](https://github.com/antonydenyer/test-google-cloud-pubsub)
