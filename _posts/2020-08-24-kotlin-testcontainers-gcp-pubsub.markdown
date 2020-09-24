@@ -83,17 +83,16 @@ val channel = ManagedChannelBuilder
         .forAddress(pubsubEmulator.host, pubsubEmulator.firstMappedPort)
         .usePlaintext()
         .build()
-val channelProvider = FixedTransportChannelProvider.create(GrpcTransportChannel.create(channel))
-```
 
-```kt
+val channelProvider = FixedTransportChannelProvider.create(
+    GrpcTransportChannel.create(channel))
 
 val topicAdminClient =TopicAdminClient
-        .create(
-                TopicAdminSettings.newBuilder()
-                        .setTransportChannelProvider(channelProvider)
-                        .setCredentialsProvider(NoCredentialsProvider.create())
-                        .build())
+    .create(
+        TopicAdminSettings.newBuilder()
+            .setTransportChannelProvider(channelProvider)
+            .setCredentialsProvider(NoCredentialsProvider.create())
+            .build())
 
 ```
 
@@ -201,4 +200,4 @@ Fairly straight forward.
 
 Using GCP PubSub is not that simple to get started with and is not that easy to test.
 
-All the code is available at https://github.com/antonydenyer/test-google-cloud-pubsub
+All the code is available at (https://github.com/antonydenyer/test-google-cloud-pubsub)
