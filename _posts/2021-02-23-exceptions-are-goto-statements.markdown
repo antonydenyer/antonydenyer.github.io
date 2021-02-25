@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Abusing exceptions as goto statements"
-date: 2020-08-24 09:00
+date: 2021-02-25 09:00
 comments: true
 categories: [Java, Programming, Exceptions]
 ---
