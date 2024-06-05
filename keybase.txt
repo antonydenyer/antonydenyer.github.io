@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/antonydenyer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.antonydenyer.co.uk
+  * I am antonydenyer (https://keybase.io/antonydenyer) on keybase.
+  * I have a public key with fingerprint 2CD7 D01A 1C9E FFAD E60F  A1B9 0977 3615 F91A 8498
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201b91c33f3051db5a54dbd73cb62a105713d030107b85ff6e9441cf99cd204d480a",
+      "fingerprint": "2cd7d01a1c9effade60fa1b909773615f91a8498",
+      "host": "keybase.io",
+      "key_id": "09773615f91a8498",
+      "kid": "01018bea063bd77149e0dcf391f3f80d6b023c60cc60e98db5933edf62951f9f5aec0a",
+      "uid": "3e46e463d04f2f181db196cae3e79719",
+      "username": "antonydenyer"
+    },
+    "service": {
+      "hostname": "www.antonydenyer.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1572095618,
+  "expire_in": 157680000,
+  "prev": "0ec9c6b40fada1b7c035064ea8fe004b30592b20bb658e4e84bbb8481553f604",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMN2AnicZVILTJVVHL8IiBCJ6ESQyvwgZ4R4zv3eVwYpxYq1AaMVloTf43x4eXwf
+3AfXGwJBjUaFgG1CwnJFKIwJjYcKSgWiBBaPvDVpUAtETZ1iIvII7FzSra2zc3Z2
+/uf3//1//0fPk646LxdPG7N+buMHlS4Xu2qtuqTW6MIcQtRkO2HIIdLQ8oXSZWS2
+JKcZZcJAAKgHUOShRJIKCWgoi7RAU7Ios6QkMnoBApqFpAxIAAErcrSiMIinKCgp
+PC/JekDJFAcEIpRQjGoKMmWajKoF0+olmZUBFKDEI0URZMQARcBxAM+yJANphYcC
+R/EcdtynmZ0eWJwomFGYUcM2/Ej+V97/8Y91A8iJSAAMibWykOIRkCWF5KFCKhyQ
+GRHoSYkBEj6I53BaPEkiWWH0PA0VXqEFJC3rti7TkYhi8MaJUopegRyuA+QZSUAk
+YnkW8k6gGZlUIQNhtKBaNNUuI9WOTERuKIF/so0SchbXmc0jlM1mC/svMkzSwqxp
+mCnTpFk0SUvHmH0WS6bZ4OSw2DOXnZCY/IguWTSqMq4q9shGJrNRUwkDxEjJYnTy
+Q5rVA55mIBdKoP2ZRhNKNqrLZoYDeDnjoGxnqZDES4xI4Q7IuAesBEgaMBQSOAUB
+QIm47bxe1ANRZGgOUYijRFHkKA7SNKkwgCKcCWapGmFgsUwhBVOajSmqYLGaEJHb
+3bXHTefipVvpvsI5bTovzzWPZzCxZ43ucCyMiARRzx86cGZ9T/fOyVmbT9UTZel7
+ToxufmlbZFHMRM5XzRE3msOSfiGGnz3cVXN/V11ATkBL4Im9u6cfVK379qMDW6f9
+Uz/5azgx6lVlYWeU65itVP1xqPfClaCGqr9jEqzv3gxpS/VWfOiY2sGaJZ+x0Gva
+tvrjO34uVK/mPxwv9+hI258vlwZXdD9nzUr0aLpqf1CTtavi3qduC9cDXArv3ifG
+Ivw93eeCRgPeqIPesb4XXDcnyOe1wHu/bVwMLvb0DcoNL8s2HRyf7fcK73//1Ohb
+7qOXw4pboNd8uGdKxlTbmRFH0Z2m0/XBc8XbG9LdG7bGCTNfRxcOjdqraumdM+fT
+OmcKhmBq9ZHG+D9fOz030Xfou7KnrxScs9dfymusbGjZ22lr2fLlD+2kX0m9muA6
+EvR5bNLZh5Pbv48Xq3c3N78jX3SEHL11ipA6n5puP3tn/pv54anVJx39reWrbH1J
+awd7oj9LTUPtbRv8mqt3tIQ2Jh3PKlp3s66mt3j+9eKP3Rhe/SPOf9PgYig78PLJ
+xboOx9oNlwuOhdRXLRa9WUCsUo/ddkjuHWR564e3ngFvL/3ku6lpvDvu6I0ut9kv
+yo6UHPTzvuRwk1Zbzt32u+6xQDevfEFsnfr1vYHxiRdX9C5tIfL6dJV5RnHgLizN
+El655jPSH6ivMMTXTmZ0Rv6eX/IPotnN7g==
+=DkLa
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/antonydenyer
+
+==================================================================
