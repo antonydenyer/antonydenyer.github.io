@@ -99,4 +99,14 @@ Smaller transactions and participants are less likely to be sidelined by profit-
 
 Block builders will help strengthen the network rather than centralise it.
 
+No hard fork required. The only changes needed are in the relay spec, the consensys layer client and some minor changes in the execution client.
 
+Downsides, the only downside I can foresee is that relays may be leaking some information to other block builders.
+
+# Conclusion 
+
+bla bla something inteligent just implement it 
+
+zero downsides? (some preemptive info leakage block builder problem not validators) 
+
+no protocol changes
