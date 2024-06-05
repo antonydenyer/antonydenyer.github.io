@@ -54,26 +54,38 @@ To introduce some form of dilemma for the block builder, the block proposer shou
 
 Let's assume we have two transactions:
 
-t1 a censored public mempool transaction paying one gwei in tips
-t2 a private transaction paying two gwei in tips and two gwei in mev
+`t1` a censored public mempool transaction paying one gwei in tips.  
+`t2` a private transaction paying two gwei in tips and two gwei in mev.  
 
-Builder censors and proposer censors
-The block will contain t2. The proposer will receive two gwei in tips, and the block builder will receive two gwei in mev.
+<hr>
+
+**Builder censors and proposer censors**
+
+The block will contain `t2`. The proposer will receive two gwei in tips, and the block builder will receive two gwei in mev.
 
 **Win-Loose**
 
-Builder censors and proposer accepts
-The proposer will build a block and receive one gwei in tips. 
+<hr>
+
+**Builder censors and proposer accepts**
+
+The proposer will build a block with `t1` and receive one gwei in tips. 
 
 **Loose-Loose**
 
-Builder accepts, and proposer accepts
-The block will contain t1 and t2. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
+<hr>
+
+**Builder accepts, and proposer accepts** 
+
+The block will contain `t1` and `t2`. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
 
 **Win-Win**
 
-Builder accepts, and proposer censors/doesn't enforce
-The block will contain t1 and t2 because it is more profitable. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
+<hr>
+
+**Builder accepts, and proposer censors/doesn't enforce** 
+
+The block will contain `t1` and `t2` because it is more profitable. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
 
 **Win-Win**
 
