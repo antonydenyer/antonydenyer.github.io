@@ -89,6 +89,8 @@ The block will contain `t1` and `t2` because it is more profitable. The proposer
 
 **Win-Win**
 
+<hr>
+
 ## Considerations
 
 Not all validators would need to implement this initially. The threat of not accepting a block builder's block should be enough incentive for them to choose not to censor transactions. However, which validators censor and which do not will become apparent over time. This may mean that block builders will change their tactics depending on who is proposing the next block.
