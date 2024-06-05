@@ -1,16 +1,13 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm highly capable Software Engineer with over 15 years experience in software development working with
+startups and large corporates. Responsible for facilitating continuous incremental development
+between technology teams, product owners and business stakeholders. I am passionate about doing
+software better and am particularly interested in eXtreme Programming, BDD, TDD and Agile.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+If you would like to work with me drop me an <a href="mailto:email@antonydenyer.co.uk" title="Email me">
+email@antonydenyer.co.uk
+</a>
