@@ -59,19 +59,23 @@ t2 a private transaction paying two gwei in tips and two gwei in mev
 
 Builder censors and proposer censors
 The block will contain t2. The proposer will receive two gwei in tips, and the block builder will receive two gwei in mev.
-Win-Loose
+
+**Win-Loose**
 
 Builder censors and proposer accepts
 The proposer will build a block and receive one gwei in tips. 
-Loose-Loose
+
+**Loose-Loose**
 
 Builder accepts, and proposer accepts
 The block will contain t1 and t2. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
-Win-Win
+
+**Win-Win**
 
 Builder accepts, and proposer censors/doesn't enforce
 The block will contain t1 and t2 because it is more profitable. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
-Win-Win
+
+**Win-Win**
 
 ## Considerations
 
