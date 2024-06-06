@@ -2,7 +2,7 @@
 layout: post
 title: "Censorship Resistance Through Game Theory"
 subtitle: "An Inclusion Lists Dilemma"
-date: 2024-06-06 09:00
+date: 2024-06-04 09:00
 comments: true
 categories: [block builder, mev, ethereum, PBS]
 ---
