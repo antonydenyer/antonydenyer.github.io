@@ -53,46 +53,41 @@ Currently, block proposers are missing out on priority fee rewards. Let's assume
 
 To introduce some form of dilemma for the block builder, the block proposer should have better visibility of what they are delegating. Currently, the relay only exposes information about fee rewards and gas used. We could (extend builder_boost_factor)[] to include an opinion about gas used that would only require changes on the consensus layer client. But let's go much further; the relay should publish the transaction hashes of the winning bid. The consensus layer client can then check against its view of the mempool and decide if it wants to delegate block building to that relay. 
 
-## Scenarios
 
-Let's assume we have two transactions:
+To frame this in more formal game theoretical terms and notation, we can consider the interaction between the block proposer and the block builder as a strategic game. This game involves decisions on whether to include certain transactions (t1 and t2) in the block, based on the incentives (tips and MEV) associated with each transaction. The players in this game are the block proposer and the block builder, and their strategies involve deciding which transactions to include or censor.
 
-`t1` a censored public mempool transaction paying one gwei in tips.  
-`t2` a private transaction paying two gwei in tips and two gwei in mev.  
+## Game Setup
+Players: Block Proposer (P) and Block Builder (B).
 
-<hr>
+## Strategies:
+For Block Proposer (P): Accept (A) or Censor (C) transactions.
+For Block Builder (B): Accept (A) or Censor (C) transactions.
+Payoffs: Defined in terms of gwei received from tips and MEV.
 
-**Builder censors and proposer censors**
+## Transactions
+t1: A censored public mempool transaction paying one gwei in tips.
+t2: A private transaction paying two gwei in tips and two gwei in MEV.
 
-The block will contain `t2`. The proposer will receive two gwei in tips, and the block builder will receive two gwei in mev.
+## Payoff Matrix
+The outcomes of the game can be represented in a payoff matrix where the rows represent the Block Builder's strategies, and the columns represent the Block Proposer's strategies. The payoffs are represented as tuples, with the first element being the payoff for the Block Proposer and the second element being the payoff for the Block Builder.
 
-**Win-Loose**
+| B \ P     |	Accept (A)	| Censor (C) |
+----------------------------------------
+|Accept (A) |	(3, 2)	    | (3, 2)     |
+|Censor (C)	| (1, 0)	    | (2, 2)     |
 
-<hr>
+## Analysis
+Builder censors and proposer censors (C, C): The block contains t2. The proposer receives two gwei in tips, and the builder receives two gwei in MEV. This is a Win-Lose scenario in the original description, but in game-theoretical terms, it's a Nash Equilibrium if the builder's payoff for censoring is higher than accepting without proposer enforcement.
 
-**Builder censors and proposer accepts**
+Builder censors and proposer accepts (C, A): The proposer builds a block with t1, receiving one gwei in tips. This is a Lose-Lose scenario, indicating a misalignment of strategies leading to suboptimal payoffs for both players.
 
-The proposer will build a block with `t1` and receive one gwei in tips. 
+Builder accepts and proposer accepts (A, A): The block contains both t1 and t2. The proposer receives three gwei in tips, and the builder receives two gwei in MEV. This is a Win-Win scenario, representing a Pareto optimal outcome where no player can be made better off without making the other player worse off.
 
-**Loose-Loose**
+Builder accepts and proposer censors/doesn't enforce (A, C): The block contains both t1 and t2 because it is more profitable. The proposer receives three gwei in tips, and the builder receives two gwei in MEV. This is also a Win-Win scenario, similar to (A, A), indicating that the proposer's decision to censor does not change the outcome due to the builder's acceptance.
 
-<hr>
+# Conclusion
+In this strategic game, the optimal outcomes for both players are when both accept the transactions, leading to a Win-Win situation. The game illustrates the importance of alignment in strategies between the block proposer and the block builder to maximize their respective payoffs.
 
-**Builder accepts, and proposer accepts** 
-
-The block will contain `t1` and `t2`. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
-
-**Win-Win**
-
-<hr>
-
-**Builder accepts, and proposer censors/doesn't enforce** 
-
-The block will contain `t1` and `t2` because it is more profitable. The proposer will receive three gwei in tips, and the block builder will receive two gwei in mev.
-
-**Win-Win**
-
-<hr>
 
 ## Considerations
 
