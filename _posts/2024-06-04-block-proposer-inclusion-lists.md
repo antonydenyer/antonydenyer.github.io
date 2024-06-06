@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Censorship Resistance Through Game Theory"
-subtitle: "A Prisoners Dilemma Inclusion List"
 date: 2024-06-04 09:00
 comments: true
 categories: [block builder, mev, ethereum, PBS]
@@ -49,7 +48,7 @@ In short we need to force the transaction supply chain to be more representative
 
 Source: <a href="https://censorship.pics/">https://censorship.pics/</a>
 
-## How to introduce a prisoners dilemma
+## How to introduce a dilemma
 
 Currently, block proposers are missing out on priority fee rewards. Let's assume an OFAC censored transaction is in the mempool tc, and a block builder creates a 'censored' block bc. The total amount of rewards available is bc + tc. However, the block proposer only gets bc. The block proposer is choosing to accept bc because the rewards are greater than what they could build themselves (see [builder_boost_factor](https://ethereum.github.io/beacon-APIs/#/Validator/produceBlockV3)). The block builder knows it can build a better block than the block proposer as they have more order flow. The only thing that keeps the block builder from bidding just above the fees in a block containing mempool transactions is healthy competition between block builders. 
 
@@ -90,7 +89,7 @@ The outcomes of the game can be represented in a payoff matrix where the rows re
 ## Analysis
 Builder censors and proposer censors (C, C): The block contains `t2`. The proposer receives `2` gwei in tips, and the builder receives `2` gwei in MEV. This is a Win-Lose scenario in the original description, but in game-theoretical terms, it's a Nash Equilibrium if the builder's payoff for censoring is higher than accepting without proposer enforcement.
 
-Builder censors and proposer accepts (C, A): The proposer builds a block with `t1`, receiving `1` gwei in tips. This is a Lose-Lose scenario, indicating a misalignment of strategies leading to suboptimal payoffs for both players.
+Builder censors and proposer accepts (C, A): The proposer chooses to build a block with `t1`, receiving `1` gwei in tips. The validator is "eth aligned" and wishes to forgo the additional rewards. It is a Lose-Lose scenario, indicating a misalignment of strategies leading to suboptimal payoffs for both players.
 
 Builder accepts and proposer accepts (A, A): The block contains both `t1` and `t2`. The proposer receives `3` gwei in tips, and the builder receives `2` gwei in MEV. This is a Win-Win scenario, representing a Pareto optimal outcome where no player can be made better off without making the other player worse off.
 
