@@ -7,6 +7,10 @@ comments: true
 categories: [block builder, mev, ethereum, PBS]
 ---
 
+```
+tldr; the relay highest bid data should include more meta data about the block so that validators can more informed decissions about delegating block building
+```
+
 Censorship resistance is a fundamental property that underpins the decentralised nature of blockchain networks and ensures the integrity and accessibility of transactions within the system. While the threat of "hard censorship" is well understood, the challenges faced by preventing "soft censorship" resistance are more nuanced.
 
 "Soft censorship" involves delaying or slowing down the propagation and inclusion of valid transactions. It could be accidental or deliberate; either way, it disrupts the normal flow of transactions, negatively impacts execution quality and harms user experience.
@@ -48,7 +52,7 @@ Currently, block proposers are missing out on priority fee rewards. Let's assume
 
 ## Proposer inclusion lists
 
-To introduce some form of dilemma for the block builder, the block proposer should have better visibility of what they are delegating. Currently, the relay only exposes information about fee rewards and gas used. We could (extend builder_boost_factor)[] to include an opinion about gas used that would only require changes on the consensus layer client. But let's go much further; the relay should publish the transaction hashes of the winning bid. The consensys layer client can then check against its view of the mempool and decide if it wants to delegate block building to that relay. 
+To introduce some form of dilemma for the block builder, the block proposer should have better visibility of what they are delegating. Currently, the relay only exposes information about fee rewards and gas used. We could (extend builder_boost_factor)[] to include an opinion about gas used that would only require changes on the consensus layer client. But let's go much further; the relay should publish the transaction hashes of the winning bid. The consensus layer client can then check against its view of the mempool and decide if it wants to delegate block building to that relay. 
 
 ## Scenarios
 
@@ -99,7 +103,7 @@ Smaller transactions and participants are less likely to be sidelined by profit-
 
 Block builders will help strengthen the network rather than centralise it.
 
-No hard fork required. The only changes needed are in the relay spec, the consensys layer client and some minor changes in the execution client.
+No hard fork required. The only changes needed are in the relay spec, the consensus layer client and some minor changes in the execution client.
 
 Downsides, the only downside I can foresee is that relays may be leaking some information to other block builders.
 
