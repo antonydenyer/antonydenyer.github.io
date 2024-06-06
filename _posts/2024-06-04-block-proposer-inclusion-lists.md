@@ -10,7 +10,7 @@ categories: [block builder, mev, ethereum, PBS]
 
 > tldr; relays should divulge more metadata about the block so that validators can make more informed decisions that align with their preferences
 
-*Thanks to @simbro for early feedback*
+> *Thanks to @simbro for early feedback*
 
 
 
@@ -119,6 +119,6 @@ Minor changes to clients
 
 Minor changes to relay infrastructure
 
-# Conclusing
+# Conclusion
 
-bla bla something inteligent just implement it what's the worse that can happen!
+In summary, by leveraging game theory principles, this proposal aims to significantly reduce transaction censorship by block builders, fostering a more inclusive and decentralized network. In the best case, it will lead to the cessation of censorship practices among block builders, enhancing the network's integrity. In the worst case, it might represent a learning opportunity with minimal loss, given the relatively minor changes required. At the very least, it promises to stimulate more competition and differentiation within the block builder market, contributing to the overall health and diversity of the ecosystem. 
