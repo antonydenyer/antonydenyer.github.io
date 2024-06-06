@@ -8,7 +8,11 @@ categories: [block builder, mev, ethereum, PBS]
 ---
 
 
-> tldr; relays should divulge more metadata about the block so that validators can make more informed decisions about delegating block building
+> tldr; relays should divulge more metadata about the block so that validators can make more informed decisions that align with their preferences
+
+*Thanks to @simbro for early feedback*
+
+
 
 Censorship resistance is a fundamental property that underpins the decentralised nature of blockchain networks and ensures the integrity and accessibility of transactions within the system. While the threat of "hard censorship" is well understood, the challenges faced by preventing "soft censorship" resistance are more nuanced.
 
@@ -92,13 +96,16 @@ Builder accepts and proposer accepts (A, A): The block contains both `t1` and `t
 
 Builder accepts and proposer censors/doesn't enforce (A, C): The block contains both `t1` and `t2` because it is more profitable. The proposer receives `3` gwei in tips, and the builder receives `2` gwei in MEV. This is also a Win-Win scenario, similar to (A, A), indicating that the proposer's decision to censor does not change the outcome due to the builder's acceptance.
 
-## Summary
 In this strategic game, the optimal outcomes for both players are when both accept the transactions, leading to a Win-Win situation. The game illustrates the importance of alignment in strategies between the block proposer and the block builder to maximize their respective payoffs.
 
 
-# Conclusions
+## Summary
 
-Not all validators would need to implement this initially. The threat of not accepting a block builder's block should be enough incentive for them to choose not to censor transactions. However, which validators censor and which do not will become apparent over time. This may mean that block builders will change their tactics depending on who is proposing the next block.
+Some validators need to be irrational (10% already are) whilst using mev-boost. Solo Validators Can Stay Retarded Longer Than Block Builders Can Stay Solvent.
+
+The threat of not accepting a block builder's block should be enough incentive for them to choose not to censor transactions. 
+
+Which validators censor and which do not will become apparent over time. This may mean that block builders will change their tactics depending on who is proposing the next block.
 
 Smaller transactions and participants are less likely to be sidelined by profit-maximising behaviour. This will lead to priority fees trending downwards.
 
@@ -106,6 +113,12 @@ Block builders will help strengthen the network rather than centralise it.
 
 No hard fork required. The only changes needed are in the relay spec, the consensus layer client and some minor changes in the execution client.
 
-Downsides, the only downside I can foresee is that relays may be leaking some information to other block builders.
+The only downside I can foresee is that relays may be leaking some information to other block builders.
 
-bla bla something inteligent just implement it!
+Minor changes to clients
+
+Minor changes to relay infrastructure
+
+# Conclusing
+
+bla bla something inteligent just implement it what's the worse that can happen!
