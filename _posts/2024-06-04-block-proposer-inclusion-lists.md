@@ -92,11 +92,11 @@ Builder accepts and proposer accepts (A, A): The block contains both `t1` and `t
 
 Builder accepts and proposer censors/doesn't enforce (A, C): The block contains both `t1` and `t2` because it is more profitable. The proposer receives `3` gwei in tips, and the builder receives `2` gwei in MEV. This is also a Win-Win scenario, similar to (A, A), indicating that the proposer's decision to censor does not change the outcome due to the builder's acceptance.
 
-# Conclusion
+## Summary
 In this strategic game, the optimal outcomes for both players are when both accept the transactions, leading to a Win-Win situation. The game illustrates the importance of alignment in strategies between the block proposer and the block builder to maximize their respective payoffs.
 
 
-## Considerations
+# Conclusions
 
 Not all validators would need to implement this initially. The threat of not accepting a block builder's block should be enough incentive for them to choose not to censor transactions. However, which validators censor and which do not will become apparent over time. This may mean that block builders will change their tactics depending on who is proposing the next block.
 
@@ -108,10 +108,4 @@ No hard fork required. The only changes needed are in the relay spec, the consen
 
 Downsides, the only downside I can foresee is that relays may be leaking some information to other block builders.
 
-# Conclusion 
-
-bla bla something inteligent just implement it 
-
-zero downsides? (some preemptive info leakage block builder problem not validators) 
-
-no protocol changes
+bla bla something inteligent just implement it!
