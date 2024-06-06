@@ -7,9 +7,9 @@ comments: true
 categories: [block builder, mev, ethereum, PBS]
 ---
 
-```
-tldr; the relay highest bid data should include more meta data about the block so that validators can more informed decissions about delegating block building
-```
+
+> tldr; the relay highest bid data should include more meta data about the block so that validators can more informed decissions about delegating block building
+
 
 Censorship resistance is a fundamental property that underpins the decentralised nature of blockchain networks and ensures the integrity and accessibility of transactions within the system. While the threat of "hard censorship" is well understood, the challenges faced by preventing "soft censorship" resistance are more nuanced.
 
