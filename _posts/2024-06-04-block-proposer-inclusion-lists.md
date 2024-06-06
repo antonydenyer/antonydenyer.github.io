@@ -9,7 +9,7 @@ categories: [block builder, mev, ethereum, PBS]
 
 > tldr; relays should divulge more metadata about the block so that validators can make more informed decisions that align with their preferences
 
-> *Thanks to @simbro for early feedback*
+> *Thanks to @simbro @malleshpai for early feedback*
 
 
 
@@ -51,6 +51,12 @@ Source: <a href="https://censorship.pics/">https://censorship.pics/</a>
 ## How to introduce a dilemma
 
 Currently, block proposers are missing out on priority fee rewards. Let's assume an OFAC censored transaction is in the mempool tc, and a block builder creates a 'censored' block bc. The total amount of rewards available is bc + tc. However, the block proposer only gets bc. The block proposer is choosing to accept bc because the rewards are greater than what they could build themselves (see [builder_boost_factor](https://ethereum.github.io/beacon-APIs/#/Validator/produceBlockV3)). The block builder knows it can build a better block than the block proposer as they have more order flow. The only thing that keeps the block builder from bidding just above the fees in a block containing mempool transactions is healthy competition between block builders. 
+
+Previous works have explored the possibility of a multi-proposer system or partial block auctions requiring significant protocol and infrastructure changes.
+
+[https://ethresear.ch/t/concurrent-block-proposers-in-ethereum/18777](https://ethresear.ch/t/concurrent-block-proposers-in-ethereum/18777)
+
+[https://ethresear.ch/t/unbundling-pbs-towards-protocol-enforced-proposer-commitments-pepc/13879](https://ethresear.ch/t/unbundling-pbs-towards-protocol-enforced-proposer-commitments-pepc/13879)
 
 ## Proposer inclusion lists
 
