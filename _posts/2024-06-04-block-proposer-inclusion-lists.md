@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Censorship Resistance Through Game Theory"
-subtitle: "An Inclusion Lists Dilemma"
+subtitle: "An Inclusion Lists Prisoners Dilemma"
 date: 2024-06-04 09:00
 comments: true
 categories: [block builder, mev, ethereum, PBS]
@@ -45,13 +45,13 @@ In short we need to force the transaction supply chain to be more representative
 
 Source: <a href="https://censorship.pics/">https://censorship.pics/</a>
 
-## How to introduce a dilemma
+## How to introduce a prisoners dilemma
 
 Currently, block proposers are missing out on priority fee rewards. Let's assume an OFAC censored transaction is in the mempool tc, and a block builder creates a 'censored' block bc. The total amount of rewards available is bc + tc. However, the block proposer only gets bc. The block proposer is choosing to accept bc because the rewards are greater than what they could build themselves (see [builder_boost_factor](https://ethereum.github.io/beacon-APIs/#/Validator/produceBlockV3)). The block builder knows it can build a better block than the block proposer as they have more order flow. The only thing that keeps the block builder from bidding just above the fees in a block containing mempool transactions is healthy competition between block builders. 
 
 ## Proposer inclusion lists
 
-To introduce some form of dilemma for the block builder, the block proposer should have better visibility of what they are delegating. Currently, the relay only exposes information about fee rewards and gas used. We could (extend builder_boost_factor)[] to include an opinion about gas used that would only require changes on the consensus layer client. But let's go much further; the relay should publish the transaction hashes of the winning bid. The consensus layer client can then check against its view of the mempool and decide if it wants to delegate block building to that relay. 
+To introduce some form of dilemma for the block builder, the block proposer should have better visibility of what they are delegating. Currently, the relay only exposes information about fee rewards and gas used. We could [extend builder_boost_factor](https://github.com/ethereum/beacon-APIs/issues/450) to include an opinion about gas used that would only require changes on the consensus layer client. But let's go much further; the relay should publish the transaction hashes of the winning bid. The consensus layer client can then check against its view of the mempool and decide if it wants to delegate block building to that relay. 
 
 
 To frame this in more formal game theoretical terms and notation, we can consider the interaction between the block proposer and the block builder as a strategic game. This game involves decisions on whether to include certain transactions (t1 and t2) in the block, based on the incentives (tips and MEV) associated with each transaction. The players in this game are the block proposer and the block builder, and their strategies involve deciding which transactions to include or censor.
