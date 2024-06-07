@@ -31,6 +31,8 @@ This proposal is not meant to replace inclusion lists but should be considered a
 
 Under mev-boost, the most profitable block always wins; this assumes that all actors in the PBS auction are rational. However, it fails to account for the fact that some validators are motivated by factors other than profit. PBS has impacted censorship resistance and pushed the network towards centralisation. Many validators (over 8% at last count) refrain from using mev-boost, perhaps because of concerns around censorship and centralisation. Validators may perceive themselves as being more ethereum aligned if they are not running mev-boost because they accept transactions that block builders censor. 
 
+[https://ethresear.ch/t/is-it-worth-using-mev-boost/19753](https://ethresear.ch/t/is-it-worth-using-mev-boost/19753)
+
 ## Block Builders
 
 The current implementation of PBS is designed so that block builders will pay the maximum possible to validators, to the detriment of all other factors. One reason PBS was introduced was the idea that block builders would be better at building blocks than validators, especially solo validators. They would be better connected and have access to private order flow. The problem is that better was assumed to mean more profitable. The current optimum strategy is to be a vertically integrated searcher builder that can pay the most for a block. Anything that gets included in that block is secondary and only there to reduce the cost burden on the purchase of the block.
