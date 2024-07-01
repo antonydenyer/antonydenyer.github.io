@@ -9,7 +9,7 @@ categories: [ethereum, blobs, eip-4844]
 > tldr; blobs were in backwardation on June 20th
 
 
-The recent Blob Contention Event on June 20th, 2024, detailed in a retrospective by Blocknative, highlighted a situation where the cost of blob data temporarily exceeded that of call data, contrary to normal expectations. This article explores the economic theories of contango and backwardation as they apply to EIP-4844 and how these concepts can help us understand and navigate the complexities of Ethereum's data markets. For more details on the event, see the original retrospective [here](https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective).
+Blocknative highlighted a situation where the cost of blob data temporarily exceeded that of call data, contrary to normal expectations. This article explores the economic theories of contango and backwardation as they apply to EIP-4844 and how these concepts can help us understand and navigate the complexities of Ethereum's data markets. For more details on the event, see the excellent retrospective from blocknative [here](https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective).
 
 # Introduction
 
