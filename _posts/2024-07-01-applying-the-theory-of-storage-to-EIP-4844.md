@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Applying the Theory of Storage to EIP-4844"
-date: 2024-06-01 09:00 +0000
+date: 2024-07-01 09:00 +0000
 comments: true
 categories: [ethereum, blobs, eip-4844]
 ---
