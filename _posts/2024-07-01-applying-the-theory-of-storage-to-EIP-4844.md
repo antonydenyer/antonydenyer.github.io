@@ -55,9 +55,9 @@ In his article, Blair from Blocknative calls this "blob contention." While conte
 
 # Conclusion
 
-For more insights about blob backwardation, refer to Blocknative's detailed retrospective on the event.
+For more insights about blob backwardation, refer to Blocknative's [detailed retrospective](https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective) on the event.
 
 ### References:
 
-https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective
-https://en.wikipedia.org/wiki/Theory_of_storage  
+[https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective](https://www.blocknative.com/blog/june-20th-blob-contention-event-retrospective)
+[https://en.wikipedia.org/wiki/Theory_of_storage](https://en.wikipedia.org/wiki/Theory_of_storage)
