@@ -47,7 +47,7 @@ Backwardation in the Blob Market
 
 However, there may be situations where blobs become more expensive than call data, leading to backwardation. Backwardation could occur due to temporary spikes in demand for blob storage, limited capacity, or increased costs associated with processing blobs. 
 
-## Blob ~Contention~ Backwardation
+## Blob ~~Contention~~ Backwardation
 
 On June 20th, 2024, there was a significant spike in the blob base fee, making blob data more expensive than call data.
 
