@@ -12,32 +12,32 @@ Writing is more than just putting words on paper. It's a process of organizing t
 
 Writing isn't merely about recording ideas; it's a way of shaping and refining them. When developers write code, they engage in a cognitive process similar to writing an essay:
 
-	•	Clarifying Thoughts: Developers break down complex problems into smaller, manageable parts, much like outlining an essay. This helps them think through each aspect of the problem systematically.
-	•	Iterative Improvement: Like revising a draft, developers refactor their code to improve clarity, readability, and performance. This ongoing process ensures the code remains readable and maintainable.
+* Clarifying Thoughts: Developers break down complex problems into smaller, manageable parts, much like outlining an essay. This helps them think through each aspect of the problem systematically.
+* Iterative Improvement: Like revising a draft, developers refactor their code to improve clarity, readability, and performance. This ongoing process ensures the code remains readable and maintainable.
 
 # Clarity and Precision in Code
 
 Clear and precise code is essential for creating robust software. Here are key principles that highlight the importance of clarity and precision in coding:
 
-	1.	Readability: Code should be easy to read and understand. This involves using meaningful variable names, consistent formatting, and avoiding unnecessary complexity. Readable code makes it easier for others (and your future self) to understand and maintain the codebase.
-	2.	Simplicity: Keeping code simple reduces the likelihood of bugs and makes it easier to maintain. Simplicity requires distilling thoughts into their simplest form, a process akin to clear writing.
-	3.	Self-documenting: The best code is self-explanatory. Self-documenting code helps others understand its purpose and functionality, much like citations and footnotes in an essay.
+* Readability: Code should be easy to read and understand. This involves using meaningful variable names, consistent formatting, and avoiding unnecessary complexity. Readable code makes it easier for others (and your future self) to understand and maintain the codebase.
+* Simplicity: Keeping code simple reduces the likelihood of bugs and makes it easier to maintain. Simplicity requires distilling thoughts into their simplest form, a process akin to clear writing.
+* Self-documenting: The best code is self-explanatory. Self-documenting code helps others understand its purpose and functionality, much like citations and footnotes in an essay.
 
 # Refactoring: The Editing Process
 
 In writing, editing refines and improves the text. Similarly, refactoring restructures code in software development to enhance its readability, maintainability, and performance without changing its external behaviour. Key refactoring techniques include:
 
-	•	Extracting Methods: Breaking down large functions into smaller, more manageable ones.
-	•	Renaming Variables: Using descriptive names to make the code self-explanatory.
-	•	Removing Redundancy: Eliminating duplicate code to reduce complexity.
+* Extracting Methods: Breaking down large functions into smaller, more manageable ones.
+* Renaming Variables: Using descriptive names to make the code self-explanatory.
+* Removing Redundancy: Eliminating duplicate code to reduce complexity.
 
 # Testing: Ensuring Quality
 
 Testing in coding is akin to proofreading in writing. It ensures the final product is error-free and meets the desired requirements. Different types of tests include:
 
-	•	Unit Tests: Verify the functionality of individual components or functions.
-	•	Integration Tests: Ensure that different parts of the system work together correctly.
-	•	End-to-End Acceptance Tests: Simulate real-world scenarios to test the application's complete functionality.
+* Unit Tests: Verify the functionality of individual components or functions.
+* Integration Tests: Ensure that different parts of the system work together correctly.
+* End-to-End Acceptance Tests: Simulate real-world scenarios to test the application's complete functionality.
 
 # Conclusion
 
