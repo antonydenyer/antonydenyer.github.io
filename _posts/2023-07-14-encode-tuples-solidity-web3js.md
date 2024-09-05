@@ -3,7 +3,7 @@ layout: post
 title: "How to encode tuples using web3js for multicall3"
 date: 2023-07-14 09:00
 comments: true
-categories: [Ethereum, solidity, web3js, simulation]
+categories: [ethereum, solidity, web3js, simulation]
 ---
 
 We're going to be looking at sending multiple transactions in a single request using [multicall3](https://github.com/mds1/multicall)

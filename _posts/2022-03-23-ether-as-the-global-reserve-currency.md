@@ -3,7 +3,7 @@ layout: post
 title: "Ether as a global reserve currency"
 date: 2022-03-23 09:00
 comments: true
-categories: [Ethereum, Ether, eth is money]
+categories: [ethereum, Ether, eth is money]
 ---
 
 The US dollar's supremacy and global reserve currency status are in decline caused by many fiscal, monetary and foreign policy changes. Not least massive amounts of government debt creation and forced seizure of central bank foreign reserves (held as treasury bills). 

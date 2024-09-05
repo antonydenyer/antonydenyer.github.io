@@ -3,7 +3,7 @@ layout: post
 title: "Meditations on Block Builders"
 date: 2024-03-22 09:00
 comments: true
-categories: [block builder, mev, ethereum]
+categories: [block builders, mev, ethereum]
 ---
 
 

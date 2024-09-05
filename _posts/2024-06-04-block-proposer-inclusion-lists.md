@@ -3,7 +3,7 @@ layout: post
 title: "Censorship Resistance Through Game Theory"
 date: 2024-06-04 09:00
 comments: true
-categories: [block builder, mev, ethereum, PBS]
+categories: [block builders, mev, ethereum, PBS]
 ---
 
 

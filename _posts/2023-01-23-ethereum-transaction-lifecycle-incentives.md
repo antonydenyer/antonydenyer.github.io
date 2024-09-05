@@ -3,7 +3,7 @@ layout: post
 title: "Ethereum transaction lifecycle and ecosystem health"
 date: 2023-01-23 09:00
 comments: true
-categories: [Ethereum, mev, mempool]
+categories: [ethereum, mev, mempool]
 ---
 
 # Before the merge - Proof of Work (PoW)
