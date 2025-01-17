@@ -8,7 +8,7 @@ categories: [ethereum, protocol design]
 
 Feedback mechanisms are the backbone of resilient, scalable systems. In distributed systems, active monitoring and backpressure ensures the system's overall stability. Similarly, horizontal scalability relies on dynamic monitoring to provision resources in response to demand. Dynamic auto-scaling and spot pricing are all standard these days. It wasn't always the case; historically, you'd have to provision servers upfront and then add to them as demand increased. Your ability to scale would be a step function. There are a couple of exceptions, but this is where ethereum is today, the only way to change something is with a hard fork aka a step function. Just take a look at gas limit 
 
-![gas limit over time](assets/img/blog/signal-feedback-and-protocol-design/gas-limit.png)
+![gas limit over time](/assets/img/blog/signal-feedback-and-protocol-design/gas-limit.png)
 
 [https://etherscan.io/chart/gaslimit](https://etherscan.io/chart/gaslimit)
 
