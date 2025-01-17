@@ -68,9 +68,9 @@ Another approach could involve creating dedicated feedback committees, elected p
 
 While each of these solutions introduces some complexity, the benefits—better decision-making, more responsive governance, and improved decentralization—outweigh the costs.
 
-## Achieving "Good": Stability Through Dynamic Feedback
+## Stability Through Dynamic Feedback
 
-What does a well-designed feedback mechanism look like in Ethereum? **Good** means achieving a stable maximum gas limit that dynamically adjusts to network conditions without compromising decentralization, liveness, or security. This vision requires embedding dynamic feedback mechanisms directly into the protocol.
+What does a well-designed feedback mechanism look like in Ethereum? I think **Good** means achieving a stable maximum gas limit that dynamically adjusts to network conditions without compromising decentralization, liveness, or security. This vision requires embedding dynamic feedback mechanisms directly into the protocol.
 
 Key metrics that could guide these adjustments include:  
 - **Missed Slots:** High rates of missed slots indicate validator stress and could signal the need for a lower gas limit.  
