@@ -13,7 +13,7 @@ Feedback mechanisms are the backbone of resilient, scalable systems. In distribu
 [https://etherscan.io/chart/gaslimit](https://etherscan.io/chart/gaslimit)
 
 
-## Protocol Feedback in Action: Difficulty Adjustment and EIP-1559
+## Protocol Feedback in Action
 
 There are two meaningful examples of protocol design that embodies this thesis; difficulty adjustment and base fee. These mechanisms enable self-regulation by allowing the network protocol to respond dynamically to changing conditions.
 
@@ -30,7 +30,7 @@ The simplicity of this feedback and signal system is what makes it so effective.
 Ethereum’s EIP-1559 introduced a similarly impactful feedback mechanism for managing transaction fees. By dynamically adjusting the base fee based on network demand, EIP-1559 reduces gas price volatility, enhances user experience, and optimizes network usage. This mechanism operates autonomously, without the need for social coordination or hard forks to update the base fee. Instead, it uses block utilization as the input for feedback, making fee adjustments seamless and automatic. The design of the algorithm is driven by the principles of dynamic feedback: when demand for block space increases, the base fee rises, effectively raising the cost of transactions and reducing demand. While the algorithm’s design can still be refined, it represents a clear example of how decentralized networks can use feedback loops to self-regulate and balance network resources efficiently.
 
 
-## The Gas Limit Debate: Technical Constraints and Social Feedback
+## The Gas Limit Debate
 
 ### Why the Gas Limit Exists
 Ethereum's gas limit isn't arbitrary; it's a safeguard. It caps the amount of computational work validators must process within a block, ensuring the network remains decentralized and all validators can operate on reasonably accessible hardware and internet connections. Blocks could grow too large without this limit, making block validation times unmanageable and increasing the risk of validator centralization.
