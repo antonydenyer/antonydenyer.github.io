@@ -10,7 +10,7 @@ Feedback mechanisms are the backbone of resilient, scalable systems. In distribu
 
 ![gas limit over time](assets/img/blog/signal-feedback-and-protocol-design/gas-limit.png)
 
-https://etherscan.io/chart/gaslimit
+[https://etherscan.io/chart/gaslimit](https://etherscan.io/chart/gaslimit)
 
 
 ## Protocol Feedback in Action: Difficulty Adjustment and EIP-1559
@@ -89,13 +89,13 @@ I think leveraging sync committees is the simplest way forward, but I see the be
 
 ### References
 
-**On Block Sizes, Gas Limits, and Scalability**:  
+**[On Block Sizes, Gas Limits, and Scalability](https://ethresear.ch/t/on-block-sizes-gas-limits-and-scalability/18444)**:  
    This research paper discusses the evolution of Ethereum's gas limits and block sizes, exploring the trade-offs between scalability and decentralization.  
-   https://ethresear.ch/t/on-block-sizes-gas-limits-and-scalability/18444
+   
 
-**A Gas Model for Ethereum 2.0**:  
+**[A Gas Model for Ethereum 2.0](https://ethresear.ch/t/a-gas-model-for-ethereum-2-0/19989)**:  
    An exploration of Ethereum's gas model with suggestions for improvements in gas cost mechanisms and scalability for Ethereum 2.0. 
-   https://ethresear.ch/t/a-gas-model-for-ethereum-2-0/19989
+   
 
-**Fork-Choice Enforced Inclusion Lists (FOCIL)**:  
-   This proposal introduces a committee-based approach to transaction inclusion, aiming to improve censorship resistance and neutrality within Ethereum.  https://ethresear.ch/t/fork-choice-enforced-inclusion-lists-focil-a-simple-committee-based-inclusion-list-proposal/19870
+**[Fork-Choice Enforced Inclusion Lists (FOCIL)](https://ethresear.ch/t/fork-choice-enforced-inclusion-lists-focil-a-simple-committee-based-inclusion-list-proposal/19870)**:  
+   This proposal introduces a committee-based approach to transaction inclusion, aiming to improve censorship resistance and neutrality within Ethereum.  
