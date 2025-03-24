@@ -12,7 +12,7 @@ Asynchronous trust means participants can interact with smart contracts and prot
 
 Things get grey when we think about cross-chain transactions. You need to trust the bridge that facilitates movement between chains. Bridges become new trust anchors, and their security models vary widely. Some rely on multisigs, others on optimistic proofs or zero-knowledge systems.
 
-In a truly asynchronous trust model, the goal is to minimize the trust surface in these bridges. Emerging approaches like bassed rollups, light clients, and cross-chain proofs aim to allow users to interact across ecosystems without relying on a central authority. While Ethereum offers strong guarantees on its own chain, extending those guarantees to a broader, multi-chain world is still a work in progress.
+In a truly asynchronous trust model, the goal is to minimize the trust surface in these bridges. Emerging approaches like based rollups, light clients, and cross-chain proofs aim to allow users to interact across ecosystems without relying on a central authority. While Ethereum offers strong guarantees on its own chain, extending those guarantees to a broader, multi-chain world is still a work in progress.
 
 The challenge lies in preserving the same principles, credibly neutral execution, censorship resistance, and eventual consistency across domains. As the ecosystem evolves, cross-chain asynchronous trust is becoming one of the most important frontiers for decentralized infrastructure.
 
