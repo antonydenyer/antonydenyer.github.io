@@ -6,7 +6,7 @@ comments: true
 categories: [ethereum]
 ---
 
-In traditional systems, trust often requires synchronous real-time interactions, centralized authorities, or constant availability. Ethereum, however, introduces a new model: asynchronous trust.
+In traditional systems, trust often requires synchronous real-time interactions, centralized authorities, or constant availability. Ethereum, however, introduced a new model: asynchronous trust.
 
 Asynchronous trust means participants can interact with smart contracts and protocols without needing to be online at the same time or trust each other directly. Instead, they rely on Ethereum’s decentralized consensus and immutable execution environment. You don’t have to trust a counterparty; you trust the code. You don’t need to coordinate in real time; the blockchain will preserve and enforce agreements whenever either party acts.
 
