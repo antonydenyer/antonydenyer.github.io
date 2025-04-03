@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding blob transactions"
-date: 2026-04-02 09:00 +0000
+date: 2025-04-03 09:00 +0000
 comments: true
 categories: [ethereum, blobs, eip-4844]
 ---
@@ -73,9 +73,11 @@ The other funny thing about eip-4844 is that blobs and transactions are kind of 
         maxFeePerBlobGas: parseUnits("10", "gwei"),
         maxPriorityFeePerGas: parseUnits("2", "gwei"),
         type: 3, 
-        blobs: ["<THE BLOB>"],
-        commitments: ["<KZG Commitment>"]
-        proofs: ["<KZG Proof>"]
+        sidecar: {
+            blobs: ["<THE BLOB>"],
+            commitments: ["<KZG Commitment>"]
+            proofs: ["<KZG Proof>"]
+        }
  };
 
     const signedTx = await wallet.signTransaction(tx);
@@ -156,3 +158,7 @@ But block builders hold back the building of the block as long as possible, so i
 ## Outsized downside risk
 
 The Block Builder must now be concerned with rejection due to missing blobs. Not only must they ensure that the block has been built correctly with signed commitments, etc., but they must also ensure blob propagation to the proposer and the majority of validators! I think this is great for ethereum as it forces block builders to act as the glue that strengthens network resilience. If you risk losing an entire block's worth of priority fees for an extra $0.126 USD, you will be very conservative when you include that transaction.
+
+# Summary
+
+You should probably pay more for blob transactions. 
