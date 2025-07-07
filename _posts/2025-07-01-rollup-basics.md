@@ -6,6 +6,8 @@ comments: true
 categories: [ethereum, rollups]
 ---
 
+> *Thanks to [@miszke_eth](https://x.com/miszke_eth) for reviewing*
+
 
 Over the past few years, Ethereum has adopted **rollups** as its primary path to scalability. It's easy to get lost in all the jargon from zk-rollups, optimistic rollups, blobs, sequencers, based rollups, preconfs etc etc. A straightforward idea holds true.
 
@@ -77,18 +79,19 @@ If you're building on OP Stack or any modern rollup, keep this in mind:
 
 It’s also worth understanding the optimistic security assumptions underpinning OP Stack. Optimistic rollups assume batches posted to Ethereum are valid, but allow anyone to challenge them if they suspect fraud. This is handled through the **fraud-proof game**.
 
-### How the Fraud Proof Game Works
+### How the Fraud Proof Game Roughly Works
 
-1. **Batch Submission:** The sequencer posts a batch of transactions to Ethereum.
-2. **Challenge Window:** After posting, a fixed period (usually 7 days) is established, known as the **challenge window**. During this time, anyone can submit proof to show the batch is invalid and make a challenge.
-3. **Fraud Proof Game:** If challenged, an interactive game is played on Ethereum to pinpoint the exact step where the state transition is incorrect. If fraud is proven, the invalid batch is reverted, and the sequencer may be penalised.
+1. **Batch Submission:** The sequencer posts a batch of transactions to Ethereum. The regularity changes dependenent on usage.
+2. **State Proposal:** The sequencer posts a state proposal to indicate the result of the batches (kind of like a proof). With OP stack this happen on an interval - generally every hour.
+3. **Challenge Window:** After the proposal has been posted, a fixed period (usually 7 days) is established, known as the **challenge window**. During this time, anyone can submit proof to show the proposal for the batches of transacitons was invalid and make a challenge.
+4. **Fraud Proof Game:** If challenged, an interactive game is played on Ethereum to pinpoint the exact step where the state transition is incorrect. If fraud is proven, the invalid batch is reverted, and the sequencer may be penalised.
 
 **In summary:**  
-You can't trust anything on optimism until 7 days have passed!
+You can't trust anything on optimistic rollup until the challenge window has passed! Checkout the [Liveness](https://l2beat.com/scaling/projects/op-mainnet#liveness) tab on L2Beat for more info.
 
 ## Validity Rollups
 
-Validity rollups do not have the same concept of "safe" vs "unsafe" heads as optimistic rollups. Each batch posted to Ethereum includes a cryptographic proof that immediately proves the correctness of the state transition. Once the proof is verified on Ethereum, the new state is immediately final and canonical. There's no period where the state is "unsafe" or pending further confirmation. There's no need to wait for a challenge window or for L1 to "confirm" the batch beyond proof verification. Proof verification is reasonably fast (almost real-time); it's the proof generation that takes time. While things are getting faster with teams like RISC Zero and Succinct pushing things forward, we still don't have real-time proof generation.   
+Validity rollups do not have the same concept of "safe" vs "unsafe" heads as optimistic rollups. Each batch posted to Ethereum includes a coresponding cryptographic proof. Whilst the proofs take variying times to generate they immediately prove the correctness of the state transition. Once the proof is verified on Ethereum, the new state is immediately final and canonical. There's no period where the state is "unsafe" or pending further confirmation. There's no need to wait for a challenge window or for L1 to "confirm" the batch beyond proof verification. Proof verification is reasonably fast (almost real-time); it's the proof generation that takes time. While things are getting faster with teams like RISC Zero and Succinct pushing things forward, we still don't have real-time proof generation.   
 
 While validity rollups don’t require a challenge period, finality still depends on the L1 verifying the proof. Until then, the new state isn't canonical. This means that the same holds true as it does for optimistic rollups: you need to wait for finalisation before you know something has definitely happened, i.e., you need to wait for withdrawals.
 
