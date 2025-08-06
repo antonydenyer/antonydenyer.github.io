@@ -21,7 +21,7 @@ It's like the early programmers who coded in binary and dismissed assembly as no
 
 Ethereum today has a well-worn stack: Solidity, the EVM, JSON-RPC, rollups, L2 sequencers, and Block Builders. These tools are better than ever, more powerful, more stable, more integrated. But that very maturity creates an illusion: that we've figured it out. The architecture is basically settled, and the roadmap is correct. The debates are closed.
 
-We start to treat the current ideas not as experiments, but as truths. Trusts that must be swallowed whole to ensure "etherum alignment".
+We start to treat the current ideas not as experiments, but as truths. Truths that must be swallowed whole to ensure "etherum alignment".
 
 We say things like: *Rollups are the way.* But what if they're not? What if they're just the best idea we've come up with so far, but far from the final form? What if there's a better abstraction waiting, one we're blind to because we've mistaken confidence and alignement for understanding?
 
@@ -29,7 +29,7 @@ We say things like: *Rollups are the way.* But what if they're not? What if they
 
 Ethereum has spent the last decade pioneering Tokenisation, DAOs, NFTs, smart locks and ZK rollups. Some of these ideas succeeded. Some exploded. Some quietly withered. But each emerged from a community willing to try things no one else would.
 
-That openness is fragile.
+**That openness is fragile.**
 
 The more we succeed, the more we risk becoming epistemically closed. The more we risk accepting ideas only from high priests. The more the roadmap becomes scripture, the more dissent sounds like heresy. But computing - and Ethereum is computing, even if we've stopped talking about the world computer - is not a linear march from worse to better. It's a dense forest of ideas, many of which die not because they were flawed, but because no one was looking in their direction.
 
