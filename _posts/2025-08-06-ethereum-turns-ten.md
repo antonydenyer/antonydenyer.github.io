@@ -5,31 +5,37 @@ date: 2025-08-06 09:00 +0000
 comments: true
 categories: [ethereum, programming]
 ---
-In the early days of Ethereum, everything was up for grabs. The idea that a global computer could run trustless applications in an adversarial environment was so radical that no one pretended to have it figured out. The very act of deploying a smart contract felt like something that could blow your leg off. There were no best practices, few standards, and fewer constraints. And it was the magical.
+In the early days of Ethereum, everything was up for grabs. The idea that a global computer could run trustless applications in an adversarial environment was so radical that no one pretended to have it figured out. The very act of deploying a smart contract felt like something that could blow your leg off. There were no best practices, few standards, and fewer constraints. And it was magical.
 
 ### But now, as Ethereum turns ten, we risk losing that spark.
 
-Today, Ethereum is mature. It has become infrastructure. The network secures hundreds of billions in value. It hosts complex financial protocols, DAOs, rollups, and identity primitives. Ethereum has survived forks, wars, regulatory attention, and existential bugs. We've built things that last. We've learned from failure. We've built client diversity, formal verification, and rollup-centric scaling. But sadly, many people think they know what they're doing.
+Today, Ethereum is mature. It has become infrastructure. The network secures hundreds of billions in value. It hosts complex financial protocols, DAOs, rollups, and identity primitives. Ethereum has survived forks, wars, regulatory attention, and existential bugs. We've built things that last. We've learned from failure. We've built client diversity, formal verification, and rollup-centric scaling. But sadly, many people think they *know* what they're doing.
 
-As a creative person, if you think you know what you're doing, you're in trouble - from researchers to developers, we should all remain impertinent. Once you fall into the trap of thinking you know what you're doing, you stop looking around for alternatives. You stop seeing the weird, marginal, paradigm-shifting ideas. You become the person who scoffed at Bitcoin for having no intrinsic value, the engineer who couldn't see why anybody would approach things differently. You become ossified. 
+And that's dangerous.
 
-The Ethereum community has spent the last decade pioneering new ideas: gas markets, on-chain DAOs, NFTs, zero-knowledge proofs, and retroactive public goods funding. Many of these have been great, while others have been terrible. But the more these ideas succeed, the bigger Ethereum becomes, the easier it is to fall into the trap of assuming the current paradigms are the only paradigms. That rollups are the only way to scale, the EVM is the only execution environment, that MEV is a problem to be minimised, rather than a design space to be reimagined.
+As a creative person — whether you're a researcher or protocol engineer — the most dangerous thought you can have is: *I know what I'm doing*. Because the moment you believe that, you stop looking. You stop exploring the edges. You become blind to strange new paths that don't fit the shape of the thing you've already built.
 
-In short, we're in danger of epistemic closure where only ideas from high priests are accepted. The roadmap becomes a holy text. 
+It's like the early programmers who coded in binary and dismissed assembly as not "real" programming. Once they'd internalised their craft, they could no longer *see* the better abstractions. We risk becoming those people.
 
-Because the history of computing is not a linear march from worse to better, it's a forest of ideas, most of which wither not because they were flawed, but because the dominant narrative couldn't see them. The Ethereum community has always been intellectually curious, philosophically grounded, and radically open to experimentation. But those values must be continually re-earned.
+### The illusion of maturity
 
-### We need to remain suspicious of orthodoxy, even our own.
+Ethereum today has a well-worn stack: Solidity, the EVM, JSON-RPC, rollups, L2 sequencers, and Block Builders. These tools are better than ever, more powerful, more stable, more integrated. But that very maturity creates an illusion: that we've figured it out. The architecture is basically settled, and the roadmap is correct. The debates are closed.
 
-This isn't a call to abandon standards or to throw caution to the wind. Ethereum must be secure, stable, and reliable. But it must also remain fertile ground for weirdness. That means continuing to ask absurd, impertinent questions.
+We start to treat the current ideas not as experiments, but as truths. Trusts that must be swallowed whole to ensure "etherum alignment".
 
-Ethereum thrives not because we know what we're doing, but because we're willing to admit we don't. That humility is what made it possible to imagine the impossible. It's what lets us see around corners.
+We say things like: *Rollups are the way.* But what if they're not? What if they're just the best idea we've come up with so far, but far from the final form? What if there's a better abstraction waiting, one we're blind to because we've mistaken confidence and alignement for understanding?
 
-Progress often demands a level of arrogance to question the frame itself. To be impertinent in the face of established wisdom. If we want to remain open to radical innovation, we have to keep that impertinence alive.
+### Epistemic humility as a design principle
 
-So, as Ethereum turns ten, the most important thing we can say is:
+Ethereum has spent the last decade pioneering Tokenisation, DAOs, NFTs, smart locks and ZK rollups. Some of these ideas succeeded. Some exploded. Some quietly withered. But each emerged from a community willing to try things no one else would.
 
-# We still don't know what we're doing.
+That openness is fragile.
+
+The more we succeed, the more we risk becoming epistemically closed. The more we risk accepting ideas only from high priests. The more the roadmap becomes scripture, the more dissent sounds like heresy. But computing - and Ethereum is computing, even if we've stopped talking about the world computer - is not a linear march from worse to better. It's a dense forest of ideas, many of which die not because they were flawed, but because no one was looking in their direction.
+
+To remain fertile, Ethereum must keep its weirdness alive. We should remain suspicious of orthodoxy, even our own. We should keep asking absurd, impertinent questions. So, as Ethereum turns ten, the most important thing we can say is:
+
+**We still don't know what we're doing here**
 
 Not as a dismissal of our progress, but as a commitment to keep looking. To stay weird. To stay open. To keep reinventing the very thing we think we've built.
 
