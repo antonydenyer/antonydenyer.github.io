@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "Understanding blob transactions"
+title: "Understanding blob transactions (pre fusaka)"
 date: 2025-04-03 09:00 +0000
 comments: true
 categories: [ethereum, blobs, eip-4844]
 ---
+
+Note that blob pricing changed post Fusaka [details here](https://www.antonydenyer.co.uk/2025-12-08-post-fusaka-blob-pricing/)
+
 EIP-4844 introduced "blob transactions" almost over a year ago, specifically aimed at significantly enhancing scalability and efficiency for layer-2 solutions like rollups. Understanding how these transactions are priced is essential for developers, users, and anyone interacting with Ethereum's economic system.
 
 ### Pricing Components for Blob Transactions
