@@ -6,7 +6,7 @@ comments: true
 categories: [tdd, engineering, GenAI]
 ---
 
-In [my previous post](/2025-12-16-tdd-in-the-age-of-genai.md), I argued that GenAI shifts the centre of gravity of testing. If large language models can quickly generate plausible implementations, then tests that merely restate the implementation in another form lose much of their value. The real question becomes: **what are we actually specifying, and at what level does that specification meaningfully constrain the system?**
+In [my previous post](/2025-12-16-tdd-in-the-age-of-genai), I argued that GenAI shifts the centre of gravity of testing. If large language models can quickly generate plausible implementations, then tests that merely restate the implementation in another form lose much of their value. The real question becomes: **what are we actually specifying, and at what level does that specification meaningfully constrain the system?**
 
 This is where property-based testing becomes more interesting. I’ve traditionally associated it with functional programming and more formal, mathematically inclined systems and never used it on production projects. In the context of GenAI, though, it begins to look more like a practical response to a changing cost structure.
 
