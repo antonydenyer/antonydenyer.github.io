@@ -6,8 +6,6 @@ comments: true
 categories: [ethereum]
 ---
 
-### Summary
-
 Ethereum’s monetary policy works well today, but it is still harder to explain than it needs to be.
 
 We currently rely on:
