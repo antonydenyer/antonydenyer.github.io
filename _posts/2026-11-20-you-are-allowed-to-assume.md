@@ -10,7 +10,7 @@ AI hallucinations are just false assumptions.
 
 Some people talk about it as though a model had found a new way to be wrong. A programmer who reads `CustomerUpdatedEvent` and takes it as a command has done the same thing.
 
-Programmers have been making false assumptions for as long as someone else has had to read their code. The useful part of the craft is the work that stops the next reader doing it. That reader used to be a person, now it is almost always an agent. A codebase has to be structured and organised so the reader can make the right assumption.
+Programmers have been making false assumptions for as long as someone else has had to read their code. The useful part of the craft is the work that stops the next reader doing it. That reader used to be a person. Now it is almost always an agent. A codebase has to be structured and organised so the reader can make the right assumption.
 
 ## When there was nothing to assume
 
@@ -22,13 +22,13 @@ High-level languages were the first real abstractions. A function name stands in
 
 Objects and types took it further. Some state, and the behaviour you're allowed to use, behind an interface. You stop caring how the fields are laid out. You care what you're allowed to do with the thing.
 
-Then the Gang of Four named a bunch of design patterns, once you've seen a strategy, or a factory, you can assume the moving parts and spend your tima and attention on the things that matter.
+Then the Gang of Four named a bunch of design patterns. Once you've seen a strategy, or a factory, you can assume the moving parts and spend your time and attention on the things that matter.
 
 Craftsmanship, SOLID, DDD take that out to the shape of the system. A boundary is a statement about which question you've finished with. None of this is new. A good codebase has always been a machine for producing the right assumption, cheaply, and for making a wrong one look like a mistake in the code. We've had years of talks about code smells, best practices, naming conventions, DSLs and on and on. All so that we can collectively make assumptions.
 
 ## CreateCustomer
 
-`CreateCustomer` will probabably create and persist a customer. Which database? I don't care. How does it write it? I don't care. I'll care the day it goes wrong, and on that day I will have to go and look. Until then I can assume the outcome.
+`CreateCustomer` will probably create and persist a customer. Which database? I don't care. How does it write it? I don't care. I'll care the day it goes wrong, and on that day I will have to go and look. Until then I can assume the outcome.
 
 `CustomerUpdatedEvent` is news. Something happened, and this is the record of it. A handler that receives it is hearing about a change, after the change.
 
@@ -36,17 +36,17 @@ If `CreateCustomer` does not write a customer, the name is wrong, not the reader
 
 ## Written down beside the code
 
-Agents are trained on code written for humans what `CreateCustomer` does will depend on the codebase! Sometimes it assembles a form and will return an instance of a `Customer` object. Sometimes it saves a `Customer` to the database. The name still invites the assumption. That's what names are for, but sometimes the assumptions we make require further understanding and context rather than just the name.
+Agents are trained on code written for humans. What `CreateCustomer` does will depend on the codebase! Sometimes it assembles a form and will return an instance of a `Customer` object. Sometimes it saves a `Customer` to the database. The name still invites the assumption. That's what names are for, but sometimes the assumptions we make require further understanding and context rather than just the name.
 
 So the help has started turning up as a second literature. `AGENTS.md`. Rules files. ADRs whose job is to say which folder the handlers live in, and which layer is allowed to call which.
 
-A good codebase was already supposed to do that with self documenting code. When the names and the boundaries hold, a programmer can take the next step without a guide, and an agent can do the same. When they don't a human can ask, but an agent can't/doesn't do that so we codeify it in markdown. We write it because this reader was trained on the repositories where the names don't hold, and because it still can't see the whole repository. It can't do what a good programmer does which is go and check and ask.
+A good codebase was already supposed to do that with self-documenting code. When the names and the boundaries hold, a programmer can take the next step without a guide, and an agent can do the same. When they don't, a human can ask, but an agent can't or doesn't, so we codify it in markdown. We write it because this reader was trained on the repositories where the names don't hold, and because it still can't see the whole repository. It can't do what a good programmer does, which is go and check and ask.
 
 ## The context window
 
 An agent's context window is often smaller than the codebase, so we need to leave maps and hints. A file at the root that says where things are. A compacted conversation, so the next turn still knows what the first turn decided.
 
-I think the context window will grow, and soon models will be able to see the whole repository. Some of them nearly can, on a small enough codebase a map of the tree has a short life once the reader can walk the tree.
+I think the context window will grow, and soon models will be able to see the whole repository. Some of them nearly can, on a small enough codebase. A map of the tree has a short life once the reader can walk the tree.
 
 A bigger window leaves `CustomerUpdatedEvent` meaning what the name says. A person could already open every file. Good programmers never grokked a system that way. They grokked it because the next assumption was obvious, and the code had been built so that assumption was the true one. A bigger window makes a lying name easier to catch, the same way a search box does. The name is still either doing its job or failing at it. How many "refactoring" PRs have you written where it's mostly name changes!?
 
@@ -60,5 +60,6 @@ An ADR earns the file when it records a decision the code can't carry. What we l
 
 ## Do you still compact by hand?
 
-It's been about twelve months since that was a normal thing to do. The files we're writing so a model can find its way around the codebase will age just as fast. But, helping a reader make the right assumption won't. We did it for programmers, with names, with boundaries, and by deciding which database is something you shouldn't need to question every time you persist something. We're doing it again for agents, some of that help is in the code, where it always belonged. A lot of it, for now, is markdown sat next to the code, because the context window is still too small.
+It's been about twelve months since that was a normal thing to do. The files we're writing so a model can find its way around the codebase will age just as fast. But helping a reader make the right assumption won't. We did it for programmers, with names, boundaries, encapsulation, and abstractions.
 
+Some of that help is in the code, where it always belonged. A lot of it, has moved from being implicitly agreed by teams to being explicit recorded stored in markdown sat next to the code.
